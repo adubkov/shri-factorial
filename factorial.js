@@ -1,10 +1,6 @@
 function sum_factorial_list(n) {
 
-  function factorial(n) {
-    var f = 1;
-    while (n) f *= n--;
-    return f;
-  }
+  var f = [ 1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880 ];
 
   function split(n) {
     nArr = [];
@@ -17,7 +13,7 @@ function sum_factorial_list(n) {
 
   function isSumFactorial(n) {
     var m = split(n), isf = 0;
-    while (m.length) isf += factorial(m.pop());
+    while (m.length) isf += f[m.pop()];
     return isf == n;
   }
 
@@ -26,5 +22,3 @@ function sum_factorial_list(n) {
   return sumFact;
 
 }
-
-console.log(sum_factorial_list(1000000));
