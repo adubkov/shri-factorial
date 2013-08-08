@@ -15,8 +15,18 @@ Example:
 ```
 
 ## Comments
-Cache of calculated factorials isn't used because in this case we've fast calculation factorial for fixed numbers (0 to 9).
-Most likely should use array of predefined values:
+Cache of calculated factorials isn't used because in this case we've fixed number of factorials [0-9], that we use array of predefined values:
 ````
 [ 1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880 ]
+```
+
+So we can just remove factorial calculation function and focus on our objectives:
+
+```
+  /*  Remove  */
+  function factorial(n) {
+    var f = 1;
+    while (n) f *= n--;
+    return f;
+  }
 ```
