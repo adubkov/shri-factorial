@@ -30,3 +30,14 @@ So we can just remove factorial calculation function and focus on our objectives
     return f;
   }
 ```
+
+Also we removed a split function, which did split Number into Array:
+```
+  function isSumFactorial(n) {
+    var m = split(n), isf = 0;
+    while (m.length) isf += f[m.pop()];
+    return isf == n;
+  }
+```
+
+So we've optimized version of function!
