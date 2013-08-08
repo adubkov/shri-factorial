@@ -14,6 +14,9 @@ Example:
 [ 40585, 145, 2, 1, 0 ]
 ```
 
-## Comment
+## Comments
 Cache of calculated factorials isn't used because in this case we've fast calculation factorial for fixed numbers (0 to 9).
-Most likely should use array of predefined values - [ 1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880 ].
+Most likely should use array of predefined values:
+````
+[ 1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880 ]
+```
