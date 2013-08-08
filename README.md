@@ -40,4 +40,4 @@ Also we removed a split function, which did split Number into Array:
   }
 ```
 
-So we've optimized version of function!
+So, now we've optimized version of function!
