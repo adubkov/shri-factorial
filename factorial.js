@@ -26,5 +26,3 @@ function sum_factorial_list(n) {
   return sumFact;
 
 }
-
-console.log(sum_factorial_list(1000000));
